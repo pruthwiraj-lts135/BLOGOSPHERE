@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog | Blogosphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">Blogosphere</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="create-blog.html"
+                    class="register-btn active">
+                    Create Blog
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle"
+                    class="theme-toggle">
+                    ☀
+                </button>
+
+                <button class="menu-toggle"
+                    id="menu-toggle">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CREATE BLOG -->
+
+    <main class="create-blog-page">
+
+        <div class="create-blog-container">
+
+            <!-- Page Heading -->
+
+            <div class="create-blog-header">
+
+                <span class="section-label">
+                    CREATE SOMETHING NEW
+                </span>
+
+                <h1>
+                    Share Your <span>Story.</span>
+                </h1>
+
+                <p>
+                    Turn your ideas into a story and share them
+                    with the Blogosphere community.
+                </p>
+
+            </div>
+
+
+            <!-- BLOG FORM -->
+
+            <form id="blog-form"
+                class="blog-form">
+
+
+                <!-- BLOG TITLE -->
+
+                <div class="form-group">
+
+                    <label for="blog-title">
+                        Blog Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="blog-title"
+                        placeholder="Give your story a meaningful title..."
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CATEGORY -->
+
+                <div class="form-group">
+
+                    <label for="blog-category">
+                        Category
+                    </label>
+
+                    <select id="blog-category" required>
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option>
+                            Technology
+                        </option>
+
+                        <option>
+                            Web Development
+                        </option>
+
+                        <option>
+                            Programming
+                        </option>
+
+                        <option>
+                            AI & Data
+                        </option>
+
+                        <option>
+                            Education
+                        </option>
+
+                        <option>
+                            Lifestyle
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- COVER IMAGE -->
+
+                <div class="form-group">
+
+                    <label for="cover-image">
+                        Cover Image
+                    </label>
+
+                    <div class="image-upload">
+
+                        <input
+                            type="file"
+                            id="cover-image"
+                            accept="image/*"
+                        >
+
+                        <label for="cover-image"
+                            class="upload-label">
+
+                            <span class="upload-icon">
+                                ↑
+                            </span>
+
+                            <strong>
+                                Upload Cover Image
+                            </strong>
+
+                            <small>
+                                PNG, JPG or WEBP
+                            </small>
+
+                        </label>
+
+                    </div>
+
+                    <img
+                        id="image-preview"
+                        class="image-preview"
+                        alt="Cover preview"
+                    >
+
+                </div>
+
+
+                <!-- RICH TEXT EDITOR -->
+
+                <div class="form-group">
+
+                    <label>
+                        Blog Content
+                    </label>
+
+                    <div class="editor">
+
+                        <!-- Toolbar -->
+
+                        <div class="editor-toolbar">
+
+                            <button type="button"
+                                data-command="bold">
+                                <strong>B</strong>
+                            </button>
+
+                            <button type="button"
+                                data-command="italic">
+                                <em>I</em>
+                            </button>
+
+                            <button type="button"
+                                data-command="formatBlock"
+                                data-value="h2">
+                                H
+                            </button>
+
+                            <button type="button"
+                                data-command="insertUnorderedList">
+                                • List
+                            </button>
+
+                            <button type="button"
+                                data-command="insertOrderedList">
+                                1. List
+                            </button>
+
+                            <button type="button"
+                                id="link-button">
+                                🔗
+                            </button>
+
+                        </div>
+
+
+                        <!-- Editable Area -->
+
+                        <div
+                            id="blog-content"
+                            class="editor-content"
+                            contenteditable="true"
+                            data-placeholder="Start writing your story..."
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TAGS -->
+
+                <div class="form-group">
+
+                    <label for="blog-tags">
+                        Tags
+                    </label>
+
+                    <input
+                        type="text"
+                        id="blog-tags"
+                        placeholder="Example: JavaScript, Technology, Learning"
+                    >
+
+                    <small class="input-help">
+                        Separate tags using commas.
+                    </small>
+
+                </div>
+
+
+                <!-- ACTION BUTTONS -->
+
+                <div class="blog-actions">
+
+                    <button
+                        type="button"
+                        id="save-draft"
+                        class="btn btn-secondary">
+                        Save Draft
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+                        Publish Blog →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

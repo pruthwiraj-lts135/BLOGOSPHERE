@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Blogosphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">Blogosphere</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="login.html" class="active">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">☀</button>
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- LOGIN SECTION -->
+
+    <main class="auth-page">
+
+        <div class="auth-card">
+
+            <div class="auth-header">
+
+                <div class="auth-icon">B</div>
+
+                <h1>Welcome Back</h1>
+
+                <p>
+                    Sign in to continue your Blogosphere journey.
+                </p>
+
+            </div>
+
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="login-user">
+                        Username or Email
+                    </label>
+
+                    <input
+                        type="text"
+                        id="login-user"
+                        placeholder="Enter your username or email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="login-password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+
+                <button type="submit" class="auth-btn">
+                    Login
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="register.html">Create an account</a>
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

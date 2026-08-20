@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Blogosphere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">Blogosphere</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="create-blog.html" class="register-btn">
+                    Create Blog
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">☀</button>
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-container">
+
+            <!-- Welcome -->
+
+            <div class="dashboard-welcome">
+
+                <div>
+                    <span class="section-label">DASHBOARD</span>
+
+                    <h1>
+                        Welcome back, <span>Writer!</span>
+                    </h1>
+
+                    <p>
+                        Manage your stories and keep sharing your ideas
+                        with the Blogosphere community.
+                    </p>
+                </div>
+
+                <a href="create-blog.html" class="btn btn-primary">
+                    + Create Blog
+                </a>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="dashboard-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">✦</div>
+
+                    <div>
+                        <span>Total Blogs</span>
+                        <strong id="total-blogs">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">◉</div>
+
+                    <div>
+                        <span>Total Views</span>
+                        <strong id="total-views">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Published Blogs -->
+
+            <section class="published-section">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="section-label">
+                            YOUR CONTENT
+                        </span>
+
+                        <h2>Published Blogs</h2>
+
+                        <p>
+                            Your latest published stories.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="published-list">
+
+                    <!-- Blog 1 -->
+
+                    <article class="published-card">
+
+                        <div class="published-image image-one"></div>
+
+                        <div class="published-content">
+
+                            <span class="blog-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                Building Better Web Experiences
+                            </h3>
+
+                            <p>
+                                Exploring simple principles that make
+                                websites more useful and accessible.
+                            </p>
+
+                            <div class="blog-meta">
+                                <span>Aug 15, 2026</span>
+                                <span>•</span>
+                                <span>324 views</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="blog-details.html"
+                            class="read-more"
+                        >
+                            View →
+                        </a>
+
+                    </article>
+
+
+                    <!-- Blog 2 -->
+
+                    <article class="published-card">
+
+                        <div class="published-image image-two"></div>
+
+                        <div class="published-content">
+
+                            <span class="blog-category">
+                                Technology
+                            </span>
+
+                            <h3>
+                                The Future of Technology
+                            </h3>
+
+                            <p>
+                                Exploring how technology continues to
+                                influence the way we learn and create.
+                            </p>
+
+                            <div class="blog-meta">
+                                <span>Aug 12, 2026</span>
+                                <span>•</span>
+                                <span>287 views</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="blog-details.html"
+                            class="read-more"
+                        >
+                            View →
+                        </a>
+
+                    </article>
+
+
+                    <!-- Blog 3 -->
+
+                    <article class="published-card">
+
+                        <div class="published-image image-three"></div>
+
+                        <div class="published-content">
+
+                            <span class="blog-category">
+                                Programming
+                            </span>
+
+                            <h3>
+                                Writing Clean and Simple Code
+                            </h3>
+
+                            <p>
+                                Practical habits for writing code that
+                                is easier to understand and maintain.
+                            </p>
+
+                            <div class="blog-meta">
+                                <span>Aug 10, 2026</span>
+                                <span>•</span>
+                                <span>198 views</span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            href="blog-details.html"
+                            class="read-more"
+                        >
+                            View →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <a href="index.html" class="footer-logo">
+                    Blogosphere
+                </a>
+
+                <p>
+                    A space to write, share and explore ideas.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="create-blog.html">Create Blog</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Blogosphere. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

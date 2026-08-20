@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blogosphere | Where Ideas Find Their Voice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">B</span>
+                <span class="logo-text">Blogosphere</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    ☀
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    ✦ Ideas • Stories • Perspectives
+                </span>
+
+                <h1>
+                    Where Ideas
+                    <span>Find Their Voice.</span>
+                </h1>
+
+                <p>
+                    Share your thoughts, discover new perspectives,
+                    and explore stories from a growing community of writers.
+                </p>
+
+                <!-- Search -->
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search blogs, topics or authors..."
+                    >
+
+                    <button id="search-btn">
+                        Search
+                    </button>
+                </div>
+
+                <!-- CTA Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="explore.html" class="btn btn-primary">
+                        Explore Blogs →
+                    </a>
+
+                    <a href="create-blog.html" class="btn btn-secondary">
+                        Start Writing →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Visual -->
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="planet">
+                    <span>B</span>
+                </div>
+
+                <div class="floating-card card-one">
+                    <span>✦</span>
+                    <div>
+                        <strong>Latest Stories</strong>
+                        <small>Discover something new</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <span>✎</span>
+                    <div>
+                        <strong>Start Writing</strong>
+                        <small>Share your ideas</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LATEST POSTS ================= -->
+
+        <section class="latest-posts">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">EXPLORE</span>
+                    <h2>Latest Posts</h2>
+                    <p>Fresh ideas and stories from the community.</p>
+                </div>
+
+                <a href="explore.html" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="blog-grid">
+
+                <!-- Blog Card 1 -->
+
+                <article class="blog-card">
+
+                    <div class="blog-image image-one">
+                        <span>Web Development</span>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>
+                            Building Better Web Experiences
+                        </h3>
+
+                        <p>
+                            Exploring simple principles that make websites
+                            more useful, accessible and enjoyable.
+                        </p>
+
+                        <div class="blog-meta">
+                            <span>Alex Morgan</span>
+                            <span>•</span>
+                            <span>Aug 15, 2026</span>
+                        </div>
+
+                        <a href="blog-details.html" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog Card 2 -->
+
+                <article class="blog-card">
+
+                    <div class="blog-image image-two">
+                        <span>Technology</span>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>
+                            The Future of Technology
+                        </h3>
+
+                        <p>
+                            A look at how emerging technologies are changing
+                            the way we learn, work and create.
+                        </p>
+
+                        <div class="blog-meta">
+                            <span>Priya Sharma</span>
+                            <span>•</span>
+                            <span>Aug 12, 2026</span>
+                        </div>
+
+                        <a href="blog-details.html" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog Card 3 -->
+
+                <article class="blog-card">
+
+                    <div class="blog-image image-three">
+                        <span>Programming</span>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>
+                            Writing Clean and Simple Code
+                        </h3>
+
+                        <p>
+                            Practical habits that can help developers write
+                            code that is easier to understand and maintain.
+                        </p>
+
+                        <div class="blog-meta">
+                            <span>Rahul Verma</span>
+                            <span>•</span>
+                            <span>Aug 10, 2026</span>
+                        </div>
+
+                        <a href="blog-details.html" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog Card 4 -->
+
+                <article class="blog-card">
+
+                    <div class="blog-image image-four">
+                        <span>Lifestyle</span>
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h3>
+                            Habits That Help You Grow
+                        </h3>
+
+                        <p>
+                            Small and consistent habits can make a meaningful
+                            difference in learning and everyday life.
+                        </p>
+
+                        <div class="blog-meta">
+                            <span>Sneha Kapoor</span>
+                            <span>•</span>
+                            <span>Aug 8, 2026</span>
+                        </div>
+
+                        <a href="blog-details.html" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <a href="index.html" class="footer-logo">
+                    Blogosphere
+                </a>
+
+                <p>
+                    A space to write, share and explore ideas.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Blogosphere. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
