@@ -68,7 +68,7 @@ Users can enter their name and add comments to blog posts.
 
 💻 How to Run the Project
 Clone this repository:
-git clone https://github.com/pruthwiraj-lts-135/BLOGOSPHERE.git
+git clone https://github.com/pruthwiraj-lts135/BLOGOSPHERE.git
 Open the project folder.
 Open index.html in your browser.
 
